@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>お金の本 発売日と売れ筋</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #F2F4F1;
+  --ink: #16233B;
+  --muted: #566277;
+  --line: #D6DBD4;
+  --primary: #274C9A;
+  --on-primary: #FFFFFF;
+  --accent: #C43D2A;
+  --accent-soft: #F7E3DF;
+  --up: #2C6A54;
+  --c-inv: #274C9A;
+  --c-eco: #2C6A54;
+  --c-biz: #8F5E10;
+  --mincho: "Shippori Mincho B1", "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", "Noto Serif CJK JP", serif;
+  --sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, "Noto Sans CJK JP", sans-serif;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #10151D;
+    --ink: #E8EBF1;
+    --muted: #9AA5B8;
+    --line: #2A3342;
+    --primary: #7FA2EA;
+    --on-primary: #0E1524;
+    --accent: #F0846E;
+    --accent-soft: #3A2420;
+    --up: #6FC2A2;
+    --c-inv: #3F66BD;
+    --c-eco: #3E8A70;
+    --c-biz: #B5811E;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #10151D;
+  --ink: #E8EBF1;
+  --muted: #9AA5B8;
+  --line: #2A3342;
+  --primary: #7FA2EA;
+  --on-primary: #0E1524;
+  --accent: #F0846E;
+  --accent-soft: #3A2420;
+  --up: #6FC2A2;
+  --c-inv: #3F66BD;
+  --c-eco: #3E8A70;
+  --c-biz: #B5811E;
+}
+html { scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 110px); }
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 max(16px, env(safe-area-inset-right, 0px)) 56px max(16px, env(safe-area-inset-left, 0px));
+}
+button, a { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+/* header */
+.top { padding: 22px 0 14px; }
+.top h1 {
+  margin: 0;
+  font-family: var(--mincho);
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+}
+.top .sub { margin: 4px 0 0; font-size: 13px; color: var(--muted); }
+.note {
+  margin: 12px 0 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.note[hidden] { display: none; }
+
+/* sticky nav */
+.nav {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 5;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  padding-top: 4px;
+}
+.tabs { display: flex; }
+.tab {
+  flex: 1;
+  appearance: none;
+  background: none;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  padding: 10px 4px 9px;
+  font-family: var(--mincho);
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.tab[aria-selected="true"] { color: var(--primary); border-bottom-color: var(--primary); }
+.badge {
+  display: inline-block;
+  min-width: 18px;
+  margin-left: 5px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background: var(--accent);
+  color: #fff;
+  font: 700 11px/18px var(--sans);
+  text-align: center;
+  vertical-align: 2px;
+}
+.badge[hidden] { display: none; }
+.chips {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scrollbar-width: none;
+}
+.chips::-webkit-scrollbar { display: none; }
+.chips[hidden] { display: none; }
+.chip {
+  flex: none;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font: 500 12.5px var(--sans);
+  cursor: pointer;
+}
+.chip i { width: 8px; height: 8px; border-radius: 2px; background: var(--cat); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+/* text blocks */
+.lead { margin: 16px 0 0; font-size: 13px; color: var(--muted); }
+.lead b { color: var(--ink); font-size: 14px; }
+.sec { margin: 40px 0 0; font-family: var(--mincho); font-weight: 800; font-size: 19px; line-height: 1.4; }
+.sec small { display: block; margin-top: 2px; font: 400 12px var(--sans); color: var(--muted); }
+.empty { margin: 32px 0; padding: 24px 0; text-align: center; color: var(--muted); }
+.empty p { margin: 0 0 14px; }
+
+/* date group */
+.day { margin-top: 26px; }
+.dayhead {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--ink);
+}
+.day.today .dayhead { border-bottom-color: var(--accent); }
+.dayhead .num { font-family: var(--mincho); font-weight: 800; font-size: 42px; line-height: 1; letter-spacing: -0.02em; }
+.dayhead .md { font-size: 13px; color: var(--muted); }
+.cd {
+  margin-left: auto;
+  align-self: center;
+  padding: 2px 10px;
+  border: 1.5px solid var(--accent);
+  border-radius: 4px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 13px;
+  transform: rotate(-2deg);
+}
+.cd.now { background: var(--accent); color: #fff; }
+.cd.was { border-color: var(--line); color: var(--muted); font-weight: 500; transform: none; }
+.day.past .num { color: var(--muted); }
+
+/* book row */
+.book {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.day .book:last-child, .list .book:last-child { border-bottom: 0; }
+.book.ranked { grid-template-columns: 32px 60px 1fr; gap: 10px; }
+.rk { text-align: center; font-family: var(--mincho); font-weight: 800; font-size: 28px; line-height: 1; color: var(--muted); padding-top: 2px; }
+.rk.top { color: var(--primary); font-size: 34px; }
+.mv { display: block; margin-top: 6px; font: 700 10.5px/1 var(--sans); font-style: normal; color: var(--muted); }
+.mv.up { color: var(--up); }
+.mv.dn { color: var(--accent); }
+.mv.new { color: var(--accent); }
+
+/* 表紙：画像があれば重ねて表示。読み込めなければ下の縦書きの表紙が見える */
+.cover {
+  position: relative;
+  width: 60px;
+  height: 86px;
+  overflow: hidden;
+  border-radius: 2px 4px 4px 2px;
+  background: var(--cat);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.28);
+}
+.cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 3px 0 0 rgba(0, 0, 0, 0.18), inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+}
+.cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; background: #fff; }
+.cover .vt {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  bottom: 30px;
+  left: 7px;
+  overflow: hidden;
+  writing-mode: vertical-rl;
+  font-family: var(--mincho);
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.cover .obi {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.92);
+  color: #16233B;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.title { margin: 0; font-family: var(--mincho); font-weight: 800; font-size: 16px; line-height: 1.45; }
+.au { margin: 1px 0 0; font-size: 12.5px; color: var(--muted); }
+.meta { display: flex; flex-wrap: wrap; gap: 0 12px; margin-top: 2px; font-size: 12px; color: var(--muted); }
+.tag { display: inline-flex; align-items: center; gap: 5px; }
+.tag::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--cat); }
+.status { margin-top: 4px; font-size: 12.5px; font-weight: 700; color: var(--accent); }
+.status.done { color: var(--muted); font-weight: 500; }
+.acts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 36px;
+  padding: 6px 11px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ink);
+  font: 500 12.5px var(--sans);
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn.on { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+.btn.amz { border-color: var(--ink); }
+@media (prefers-reduced-motion: no-preference) {
+  .btn, .chip, .tab { transition: background-color 0.15s, color 0.15s, border-color 0.15s; }
+}
+
+/* ranking header + cart summary */
+.rankbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-top: 20px; }
+.rankbar h2 { margin: 0; font-family: var(--mincho); font-weight: 800; font-size: 19px; line-height: 1.4; }
+.rankbar small { display: block; font: 400 12px var(--sans); color: var(--muted); }
+.list { margin-top: 6px; }
+.sum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--ink);
+}
+.sum .n { font-family: var(--mincho); font-weight: 800; font-size: 26px; line-height: 1.2; }
+.sum .yen { margin-left: 10px; font-size: 13px; color: var(--muted); }
+.foot { margin: 40px 0 0; font-size: 11.5px; line-height: 1.7; color: var(--muted); }
+.foot a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>お金の本、発売日と売れ筋</h1>
+    <p class="sub" id="today"></p>
+    <p class="note" id="note" hidden></p>
+  </header>
+
+  <nav class="nav" aria-label="表示の切り替え">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-release" data-act="tab" data-tab="release" aria-selected="true" aria-controls="view">発売予定</button>
+      <button class="tab" role="tab" id="tab-rank" data-act="tab" data-tab="rank" aria-selected="false" aria-controls="view">売れ筋</button>
+      <button class="tab" role="tab" id="tab-cart" data-act="tab" data-tab="cart" aria-selected="false" aria-controls="view">まとめ買い<span class="badge" id="badge" hidden>0</span></button>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="分野で絞り込む">
+      <button class="chip" data-act="cat" data-cat="all" aria-pressed="true">すべて</button>
+      <button class="chip" data-act="cat" data-cat="inv" aria-pressed="false" style="--cat:var(--c-inv)"><i></i>投資・資産運用</button>
+      <button class="chip" data-act="cat" data-cat="eco" aria-pressed="false" style="--cat:var(--c-eco)"><i></i>お金の教養</button>
+      <button class="chip" data-act="cat" data-cat="biz" aria-pressed="false" style="--cat:var(--c-biz)"><i></i>副業・起業</button>
+    </div>
+  </nav>
+
+  <main id="view" role="tabpanel" aria-live="polite"><p class="lead">読み込み中です…</p></main>
+
+  <p class="foot">
+    書籍情報と表紙画像は楽天ブックスAPIから毎日自動で更新しています。「予定に追加」はGoogleカレンダーの登録画面を開きます（発売日の朝9時から30分の予定）。「Amazonで見る」はISBNからAmazonの商品ページを開きます。<br>
+    <a href="https://developers.rakuten.com/" target="_blank" rel="noopener noreferrer">Supported by Rakuten Developers</a>
+  </p>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var WD = ["日", "月", "火", "水", "木", "金", "土"];
+  var CATS = {
+    inv: { name: "投資・資産運用", short: "投資", col: "var(--c-inv)" },
+    eco: { name: "お金の教養", short: "教養", col: "var(--c-eco)" },
+    biz: { name: "副業・起業", short: "稼ぐ", col: "var(--c-biz)" }
+  };
+
+  /* books.json が読めないときに使うサンプル（すべて架空）。off = 今日から何日後に発売か */
+  var SAMPLE = [
+    { id: "u1",  off: 0,   t: "三十年後に笑う積立投資",     a: "青木 遼",     p: "碧洋社",       y: 1650, c: "inv" },
+    { id: "u2",  off: 1,   t: "円安の次に来るもの",         a: "桐山 朋子",   p: "北辰出版",     y: 1760, c: "eco" },
+    { id: "u3",  off: 3,   t: "月5万円の副業を三年続ける",   a: "宮下 拓海",   p: "あかつき書房", y: 1540, c: "biz" },
+    { id: "u4",  off: 4,   t: "高配当株は決算の三行で選ぶ",   a: "那須 由紀",   p: "青樹社",       y: 1680, c: "inv" },
+    { id: "u5",  off: 6,   t: "お金の教養は中学生で足りる",   a: "相馬 晴彦",   p: "灯台社",       y: 1430, c: "eco" },
+    { id: "u6",  off: 9,   t: "はじめての一人社長",         a: "堀内 さくら", p: "碧洋社",       y: 1650, c: "biz" },
+    { id: "u7",  off: 12,  t: "新NISA 取り崩しの設計図",    a: "小野寺 梢",   p: "北辰出版",     y: 1870, c: "inv" },
+    { id: "u8",  off: 12,  t: "物価と賃金をやさしく読む",     a: "柳田 雅人",   p: "灯台社",       y: 1100, c: "eco" },
+    { id: "u9",  off: 21,  t: "債券は地味に強い",           a: "三枝 修",     p: "あかつき書房", y: 1760, c: "inv" },
+    { id: "u10", off: 26,  t: "小さく売って大きく続ける",     a: "白石 蓮",     p: "青樹社",       y: 1540, c: "biz" },
+    { id: "n1",  off: -9,  t: "ゼロからの確定申告と節税",     a: "水野 里奈",   p: "三日月書房",   y: 1650, c: "biz" },
+    { id: "r1",  off: -70, t: "投資は退屈なほどうまくいく",   a: "浅野 寛",     p: "碧洋社",       y: 1650, c: "inv", rank: 1,  mv: 0 },
+    { id: "r2",  off: -12, t: "副業は週末二時間から",         a: "川端 詩織",   p: "あかつき書房", y: 1540, c: "biz", rank: 2,  mv: 3 },
+    { id: "r3",  off: -34, t: "家計簿をつけない資産形成",     a: "石動 圭",     p: "三日月書房",   y: 1600, c: "inv", rank: 3,  mv: 1 },
+    { id: "r4",  off: -48, t: "お金の世界史 ざっくり全部",    a: "久保田 恒一", p: "灯台社",       y: 1760, c: "eco", rank: 4,  mv: -2 },
+    { id: "r5",  off: -3,  t: "配当金で月3万円をつくる",      a: "天野 実花",   p: "青樹社",       y: 1650, c: "inv", rank: 5,  mv: "new" },
+    { id: "r6",  off: -90, t: "経済ニュースが三分でわかる本",  a: "岡部 和真",   p: "北辰出版",     y: 1430, c: "eco", rank: 6,  mv: -1 },
+    { id: "r7",  off: -20, t: "一人でも稼げる小さな事業",     a: "東 ひなた",   p: "あかつき書房", y: 1580, c: "biz", rank: 7,  mv: 0 },
+    { id: "r8",  off: -120,t: "新NISA つみたて枠の正解",      a: "桜井 学",     p: "碧洋社",       y: 1540, c: "inv", rank: 8,  mv: 2 },
+    { id: "r9",  off: -6,  t: "なぜ物価は上がり続けるのか",   a: "河合 悠",     p: "灯台社",       y: 1210, c: "eco", rank: 9,  mv: "new" },
+    { id: "r10", off: -55, t: "起業前に読むお金の基本",       a: "松浦 直樹",   p: "青樹社",       y: 1650, c: "biz", rank: 10, mv: -3 },
+    { id: "r11", off: -28, t: "オルカン以外を考える",         a: "福永 蒼",     p: "三日月書房",   y: 1700, c: "inv", rank: 11, mv: 2 },
+    { id: "r12", off: -16, t: "金利のある世界の暮らし方",     a: "竹内 千尋",   p: "北辰出版",     y: 1650, c: "eco", rank: 12, mv: 0 }
+  ];
+
+  var STORE_KEY = "kanehon:cart";
+  var BOOKS = [];
+  var state = { tab: "release", cat: "all", cart: loadCart() };
+
+  var now = new Date();
+  var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+  function loadCart() {
+    try {
+      var raw = window.localStorage.getItem(STORE_KEY);
+      var arr = raw ? JSON.parse(raw) : [];
+      return new Set(Array.isArray(arr) ? arr : []);
+    } catch (e) { return new Set(); }
+  }
+  function saveCart() {
+    try { window.localStorage.setItem(STORE_KEY, JSON.stringify(Array.from(state.cart))); } catch (e) { /* 保存できなくても動作は続ける */ }
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function dateOf(off) { return new Date(today.getFullYear(), today.getMonth(), today.getDate() + off); }
+  function yen(n) { return "¥" + Number(n || 0).toLocaleString("ja-JP"); }
+  function byId(id) { return BOOKS.filter(function (b) { return b.id === id; })[0]; }
+  function catOK(b) { return state.cat === "all" || b.c === state.cat; }
+  function hasDate(b) { return typeof b.off === "number"; }
+  function isUpcoming(b) { return hasDate(b) && b.off >= 0; }
+  function pad(n) { return n < 10 ? "0" + n : "" + n; }
+  function ymd(d) { return d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate()); }
+
+  /* books.json → 画面用に整える（date="YYYY-MM-DD" から「あと何日か」を計算） */
+  function normalize(list) {
+    return list.map(function (b) {
+      var o = Object.assign({}, b);
+      o.id = String(b.id || b.isbn || b.t);
+      if (b.date) {
+        var p = String(b.date).split("-");
+        var d = new Date(+p[0], +p[1] - 1, +p[2]);
+        o.off = Math.round((d - today) / 86400000);
+      } else if (typeof b.off !== "number") {
+        o.off = null;
+      }
+      if (!CATS[o.c]) o.c = "eco";
+      return o;
+    });
+  }
+
+  /* ISBN-13(978〜) → ISBN-10。AmazonではISBN-10が商品ページのIDになる */
+  function isbn13to10(s) {
+    s = String(s || "").replace(/[^0-9Xx]/g, "");
+    if (s.length === 10) return s.toUpperCase();
+    if (s.length !== 13 || s.slice(0, 3) !== "978") return null;
+    var core = s.slice(3, 12), sum = 0;
+    for (var i = 0; i < 9; i++) sum += (10 - i) * parseInt(core.charAt(i), 10);
+    var chk = (11 - (sum % 11)) % 11;
+    return core + (chk === 10 ? "X" : String(chk));
+  }
+  function amazonUrl(b) {
+    var i10 = isbn13to10(b.isbn);
+    if (i10) return "https://www.amazon.co.jp/dp/" + i10;
+    return "https://www.amazon.co.jp/s?i=stripbooks&k=" + encodeURIComponent(b.t + " " + (b.a || ""));
+  }
+  function calUrl(b) {
+    var d = ymd(dateOf(b.off));
+    var details = (b.a || "") + (b.p ? "（" + b.p + "）" : "") + " " + yen(b.y) + "\nAmazon: " + amazonUrl(b);
+    return "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+      "&text=" + encodeURIComponent("発売日: " + b.t) +
+      "&dates=" + d + "T090000/" + d + "T093000" +
+      "&ctz=Asia%2FTokyo" +
+      "&details=" + encodeURIComponent(details);
+  }
+  function relPast(off) {
+    var n = -off;
+    if (n < 30) return n + "日前に発売";
+    return Math.round(n / 30) + "か月前に発売";
+  }
+
+  var ICON_CAL = '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="2"/><path d="M2 7h12M5.5 1.5v3M10.5 1.5v3"/></svg>';
+  var ICON_EXT = '<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h7v7M13 3 5 11"/></svg>';
+
+  function mvHTML(mv) {
+    if (mv === "new") return '<i class="mv new">NEW</i>';
+    if (typeof mv !== "number") return "";
+    if (mv > 0) return '<i class="mv up">↑' + mv + '</i>';
+    if (mv < 0) return '<i class="mv dn">↓' + (-mv) + '</i>';
+    return '<i class="mv">→</i>';
+  }
+
+  function bookHTML(b, o) {
+    o = o || {};
+    var cat = CATS[b.c];
+    var upcoming = isUpcoming(b);
+    var inCart = state.cart.has(b.id);
+
+    var img = b.img ? '<img src="' + esc(b.img) + '" alt="" loading="lazy" decoding="async">' : "";
+    var cover = '<div class="cover" style="--cat:' + cat.col + '" aria-hidden="true"><span class="vt">' +
+      esc(b.t.slice(0, 12)) + '</span><span class="obi">' + cat.short + '</span>' + img + '</div>';
+
+    var rank = o.rank ? '<div class="rk' + (o.rank <= 3 ? " top" : "") + '"><span>' + o.rank + '</span>' + mvHTML(b.mv) + '</div>' : "";
+
+    var status = "";
+    if (o.showStatus) {
+      if (!hasDate(b)) status = "";
+      else if (upcoming) {
+        var d = dateOf(b.off);
+        status = '<div class="status">' + (d.getMonth() + 1) + "月" + d.getDate() + "日発売予定" + (b.off === 0 ? "（本日）" : "（あと" + b.off + "日）") + '</div>';
+      } else status = '<div class="status done">発売中</div>';
+    } else if (o.showRel && hasDate(b)) {
+      status = '<div class="status done">' + relPast(b.off) + '</div>';
+    }
+
+    var cartBtn = o.cartView
+      ? '<button class="btn" data-act="cart" data-id="' + esc(b.id) + '">リストから外す</button>'
+      : '<button class="btn' + (inCart ? " on" : "") + '" data-act="cart" data-id="' + esc(b.id) + '" aria-pressed="' + inCart + '">' +
+        (inCart ? "✓ 追加済み" : "＋ まとめ買い") + '</button>';
+    var calBtn = upcoming
+      ? '<a class="btn" href="' + esc(calUrl(b)) + '" target="_blank" rel="noopener noreferrer">' + ICON_CAL + '予定に追加</a>'
+      : "";
+    var amz = '<a class="btn amz" href="' + esc(amazonUrl(b)) + '" target="_blank" rel="noopener noreferrer">Amazonで見る' + ICON_EXT + '</a>';
+
+    return '<article class="book' + (o.rank ? " ranked" : "") + '">' + rank + cover +
+      '<div><h3 class="title">' + esc(b.t) + '</h3>' +
+      (b.a ? '<p class="au">' + esc(b.a) + '</p>' : "") +
+      '<div class="meta">' + (b.p ? '<span>' + esc(b.p) + '</span>' : "") + (b.y ? '<span>' + yen(b.y) + '</span>' : "") +
+      '<span class="tag" style="--cat:' + cat.col + '">' + cat.name + '</span></div>' +
+      status +
+      '<div class="acts">' + cartBtn + calBtn + amz + '</div></div></article>';
+  }
+
+  function dayHTML(off, books, past) {
+    var d = dateOf(off);
+    var cd;
+    if (off === 0) cd = '<span class="cd now">本日発売</span>';
+    else if (off === 1) cd = '<span class="cd">明日発売</span>';
+    else if (off > 1) cd = '<span class="cd">あと' + off + '日</span>';
+    else cd = '<span class="cd was">' + (-off) + '日前</span>';
+    return '<section class="day' + (off === 0 ? " today" : "") + (past ? " past" : "") + '">' +
+      '<header class="dayhead"><span class="num">' + d.getDate() + '</span><span class="md">' + (d.getMonth() + 1) + "月 " + WD[d.getDay()] + '曜日</span>' + cd + '</header>' +
+      books.map(function (b) { return bookHTML(b, {}); }).join("") + '</section>';
+  }
+
+  function groups(list, past) {
+    var order = [];
+    var map = {};
+    list.forEach(function (b) {
+      if (!map[b.off]) { map[b.off] = []; order.push(b.off); }
+      map[b.off].push(b);
+    });
+    return order.map(function (off) { return dayHTML(off, map[off], past); }).join("");
+  }
+
+  function releaseHTML() {
+    var list = BOOKS.filter(catOK);
+    var up = list.filter(isUpcoming).sort(function (a, b) { return a.off - b.off; });
+    var past = list.filter(function (b) { return hasDate(b) && b.off < 0 && b.off >= -14; }).sort(function (a, b) { return b.off - a.off; });
+    var h = '<p class="lead">これから発売される本は<b> ' + up.length + '冊</b>。「予定に追加」で発売日の朝9時にカレンダーへ入ります。</p>';
+    h += up.length ? groups(up, false) : '<div class="empty"><p>この分野で発売予定の本はまだありません。</p></div>';
+    if (past.length) {
+      h += '<h2 class="sec">最近発売された本<small>過去14日以内</small></h2>' + groups(past, true);
+    }
+    return h;
+  }
+
+  function rankedList() {
+    return BOOKS.filter(function (b) { return b.rank; })
+      .sort(function (a, b) { return a.rank - b.rank; })
+      .filter(catOK);
+  }
+
+  function rankHTML() {
+    var list = rankedList();
+    var h = '<div class="rankbar"><h2>売れ筋ランキング<small>矢印は前日からの順位の動き</small></h2>' +
+      (list.length ? '<button class="btn" data-act="top3">上位3冊を追加</button>' : "") + '</div>';
+    if (!list.length) return h + '<div class="empty"><p>この分野のランキングはまだありません。</p></div>';
+    h += '<div class="list">' + list.map(function (b, i) {
+      return bookHTML(b, { rank: i + 1, showRel: true });
+    }).join("") + '</div>';
+    return h;
+  }
+
+  function cartHTML() {
+    var items = Array.from(state.cart).map(byId).filter(Boolean).sort(function (a, b) {
+      return (hasDate(a) ? a.off : -9999) - (hasDate(b) ? b.off : -9999);
+    });
+    if (!items.length) {
+      return '<div class="empty"><p>まだ本が入っていません。<br>「売れ筋」や「発売予定」で「＋ まとめ買い」を押すと、ここに集まります。</p>' +
+        '<button class="btn amz" data-act="tab" data-tab="rank">売れ筋を見る</button></div>';
+    }
+    var total = items.reduce(function (s, b) { return s + (b.y || 0); }, 0);
+    var unreleased = items.filter(isUpcoming).length;
+    var h = '<div class="sum"><div><span class="n">' + items.length + '冊</span><span class="yen">合計 ' + yen(total) + '</span></div>' +
+      '<button class="btn" data-act="clear">すべて外す</button></div>';
+    if (unreleased) {
+      h += '<p class="lead">発売前の本が' + unreleased + '冊あります。「予定に追加」しておくと、発売日の朝に買い忘れません。</p>';
+    }
+    h += '<div class="list">' + items.map(function (b) { return bookHTML(b, { cartView: true, showStatus: true }); }).join("") + '</div>';
+    return h;
+  }
+
+  function render() {
+    var v = document.getElementById("view");
+    v.innerHTML = state.tab === "release" ? releaseHTML() : state.tab === "rank" ? rankHTML() : cartHTML();
+
+    ["release", "rank", "cart"].forEach(function (t) {
+      document.getElementById("tab-" + t).setAttribute("aria-selected", String(state.tab === t));
+    });
+    document.getElementById("chips").hidden = state.tab === "cart";
+    Array.prototype.forEach.call(document.querySelectorAll(".chip"), function (c) {
+      c.setAttribute("aria-pressed", String(c.getAttribute("data-cat") === state.cat));
+    });
+    var badge = document.getElementById("badge");
+    badge.textContent = state.cart.size;
+    badge.hidden = state.cart.size === 0;
+  }
+
+  document.addEventListener("click", function (e) {
+    var el = e.target.closest("[data-act]");
+    if (!el) return;
+    var act = el.getAttribute("data-act");
+    if (act === "tab") {
+      state.tab = el.getAttribute("data-tab");
+      render();
+      window.scrollTo(0, 0);
+    } else if (act === "cat") {
+      state.cat = el.getAttribute("data-cat");
+      render();
+    } else if (act === "cart") {
+      var id = el.getAttribute("data-id");
+      if (state.cart.has(id)) state.cart.delete(id); else state.cart.add(id);
+      saveCart();
+      render();
+    } else if (act === "top3") {
+      rankedList().slice(0, 3).forEach(function (b) { state.cart.add(b.id); });
+      saveCart();
+      render();
+    } else if (act === "clear") {
+      state.cart.clear();
+      saveCart();
+      render();
+    }
+  });
+
+  /* 表紙画像が読み込めない／空だったら画像だけ外す（下の縦書きの表紙が見える） */
+  document.addEventListener("error", function (e) {
+    var t = e.target;
+    if (t && t.tagName === "IMG" && t.closest && t.closest(".cover")) t.remove();
+  }, true);
+  document.addEventListener("load", function (e) {
+    var t = e.target;
+    if (t && t.tagName === "IMG" && t.closest && t.closest(".cover") && t.naturalWidth <= 1) t.remove();
+  }, true);
+
+  function fmtUpdated(iso) {
+    var d = new Date(iso);
+    if (isNaN(d.getTime())) return "";
+    return (d.getMonth() + 1) + "月" + d.getDate() + "日 " + d.getHours() + ":" + pad(d.getMinutes());
+  }
+
+  function start(list, live, updated) {
+    BOOKS = normalize(list);
+    /* 保存済みのまとめ買いのうち、いまのデータにない本は外す */
+    state.cart = new Set(Array.from(state.cart).filter(function (id) { return !!byId(id); }));
+    var sub = "今日は" + (today.getMonth() + 1) + "月" + today.getDate() + "日（" + WD[today.getDay()] + "）。";
+    var note = document.getElementById("note");
+    if (live) {
+      var u = fmtUpdated(updated);
+      sub += "投資・お金の教養・副業の本だけを追います。" + (u ? "データ更新: " + u : "");
+      note.hidden = true;
+    } else {
+      sub += "投資・お金の教養・副業の本だけを追います。";
+      note.textContent = "サンプルデータで表示しています（books.json がまだありません）。書名・著者・順位はすべて架空で、表紙画像は出ません。";
+      note.hidden = false;
+    }
+    document.getElementById("today").textContent = sub;
+    render();
+  }
+
+  fetch("books.json", { cache: "no-cache" })
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(function (j) {
+      if (!j || !Array.isArray(j.books) || !j.books.length) throw new Error("empty");
+      start(j.books, true, j.updated);
+    })
+    .catch(function () { start(SAMPLE, false, null); });
+})();
+</script>
+</body>
+</html>

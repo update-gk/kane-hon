@@ -1,0 +1,35 @@
+name: update-books
+
+on:
+  schedule:
+    - cron: "0 21 * * *"   # 毎日 日本時間 6:00（UTC 21:00）
+  workflow_dispatch:        # Actions タブから手動でも実行できる
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 楽天ブックスから本の情報を取得
+        env:
+          RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
+          RAKUTEN_ACCESS_KEY: ${{ secrets.RAKUTEN_ACCESS_KEY }}
+          # GitHub Pages の公開URL。楽天アプリの「許可されたWebサイト」と同じドメインになる
+          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python fetch_books.py
+
+      - name: books.json を保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add books.json
+          git diff --cached --quiet || git commit -m "Update books.json"
+          git push
