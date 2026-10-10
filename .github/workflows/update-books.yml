@@ -24,7 +24,18 @@ jobs:
           RAKUTEN_ACCESS_KEY: ${{ secrets.RAKUTEN_ACCESS_KEY }}
           # GitHub Pages の公開URL。楽天アプリの「許可されたWebサイト」と同じドメインになる
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
-        run: python fetch_books.py
+        run: |
+          set -o pipefail
+          python fetch_books.py 2>&1 | tee /tmp/fetch.log
+
+      - name: エラー内容をサマリーに出す（失敗時のみ・調査用）
+        if: failure()
+        run: |
+          {
+            echo '```'
+            cat /tmp/fetch.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: books.json を保存
         run: |
