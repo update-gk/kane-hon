@@ -162,11 +162,9 @@ def iter_items(genre_id, sort, max_pages):
     for page in range(1, max_pages + 1):
         data = call("BooksBook/Search/20170404", booksGenreId=genre_id, sort=sort,
                     hits=30, page=page, formatVersion=2)
-        items = data.get("items") or []
+        # 楽天APIはレスポンスで "items" ではなく "Items"（大文字始まり）を返すことがある
+        items = data.get("items") or data.get("Items") or []
         if not items:
-            if page == 1:
-                print("  診断: items が0件でした。APIの生レスポンス(先頭800文字): " +
-                      json.dumps(data, ensure_ascii=False)[:800])
             return
         yield page, items
         try:
