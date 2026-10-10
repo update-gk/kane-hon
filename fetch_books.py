@@ -164,6 +164,9 @@ def iter_items(genre_id, sort, max_pages):
                     hits=30, page=page, formatVersion=2)
         items = data.get("items") or []
         if not items:
+            if page == 1:
+                print("  診断: items が0件でした。APIの生レスポンス(先頭800文字): " +
+                      json.dumps(data, ensure_ascii=False)[:800])
             return
         yield page, items
         try:
