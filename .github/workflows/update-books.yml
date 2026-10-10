@@ -28,14 +28,11 @@ jobs:
           set -o pipefail
           python fetch_books.py 2>&1 | tee /tmp/fetch.log
 
-      - name: エラー内容をサマリーに出す（失敗時のみ・調査用）
+      - name: エラー内容を注釈に出す（失敗時のみ・調査用）
         if: failure()
         run: |
-          {
-            echo '```'
-            cat /tmp/fetch.log
-            echo '```'
-          } >> "$GITHUB_STEP_SUMMARY"
+          MSG=$(tail -c 3000 /tmp/fetch.log | sed ':a;N;$!ba;s/\n/%0A/g')
+          echo "::error::$MSG"
 
       - name: books.json を保存
         run: |
