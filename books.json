@@ -1,7 +1,49 @@
 {
- "updated": "2026-10-28T09:14:23+09:00",
+ "updated": "2026-10-29T09:35:13+09:00",
  "genre": "ビジネス・経済・就職",
  "books": [
+  {
+   "id": "9784532355395",
+   "isbn": "9784532355395",
+   "t": "投資で一番大切な20の教え",
+   "a": "ハワード・マークス/貫井　佳子",
+   "p": "日本経済新聞出版社",
+   "y": 2200,
+   "c": "inv",
+   "date": null,
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5395/9784532355395.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/12064406/",
+   "rank": 18,
+   "mv": "new"
+  },
+  {
+   "id": "9784480864246",
+   "isbn": "9784480864246",
+   "t": "改訂版　金持ち父さん　貧乏父さん:アメリカの金持ちが教えてくれるお金の哲学",
+   "a": "ロバート・キヨサキ/白根 美保子",
+   "p": "筑摩書房",
+   "y": 1870,
+   "c": "eco",
+   "date": null,
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4246/9784480864246_1_283.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/12488205/",
+   "rank": 19,
+   "mv": "new"
+  },
+  {
+   "id": "9784775972267",
+   "isbn": "9784775972267",
+   "t": "マーケットのテクニカル分析",
+   "a": "ジョン・J・マーフィー/長尾慎太郎",
+   "p": "パンローリング",
+   "y": 6380,
+   "c": "inv",
+   "date": null,
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2267/9784775972267.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/15232051/",
+   "rank": 20,
+   "mv": "new"
+  },
   {
    "id": "9784815809973",
    "isbn": "9784815809973",
@@ -13,8 +55,8 @@
    "date": "2020-08-17",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9973/9784815809973.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/16386907/",
-   "rank": 17,
-   "mv": "new"
+   "rank": 13,
+   "mv": 4
   },
   {
    "id": "9784829508169",
@@ -27,8 +69,8 @@
    "date": "2021-07-17",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8169/9784829508169_1_71.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/16766782/",
-   "rank": 9,
-   "mv": 5
+   "rank": 7,
+   "mv": 2
   },
   {
    "id": "9784478114131",
@@ -41,8 +83,8 @@
    "date": "2021-12-09",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4131/9784478114131_1_2.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/16915229/",
-   "rank": 18,
-   "mv": -3
+   "rank": 8,
+   "mv": 10
   },
   {
    "id": "9784801400993",
@@ -55,8 +97,8 @@
    "date": "2022-08-16",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0993/9784801400993_1_12.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/17181684/",
-   "rank": 3,
-   "mv": "new"
+   "rank": 2,
+   "mv": 1
   },
   {
    "id": "9784046068439",
@@ -69,8 +111,8 @@
    "date": "2024-04-02",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8439/9784046068439_1_47.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/17787611/",
-   "rank": 10,
-   "mv": 6
+   "rank": 9,
+   "mv": 1
   },
   {
    "id": "9784295409632",
@@ -83,8 +125,8 @@
    "date": "2024-05-02",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9632/9784295409632_1_3.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/17799235/",
-   "rank": 13,
-   "mv": "new"
+   "rank": 10,
+   "mv": 3
   },
   {
    "id": "9784023323780",
@@ -97,91 +139,49 @@
    "date": "2024-11-20",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3780/9784023323780_1_5.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18041936/",
-   "rank": 1,
-   "mv": 0
+   "rank": 4,
+   "mv": -3
   },
   {
-   "id": "9784478121184",
-   "isbn": "9784478121184",
-   "t": "5年で1億貯める株式投資",
-   "a": "kenmo（湘南投資勉強会）",
+   "id": "9784478121054",
+   "isbn": "9784478121054",
+   "t": "漫画 お金の大冒険",
+   "a": "両＠リベ大学長",
    "p": "ダイヤモンド社",
-   "y": 1870,
-   "c": "inv",
-   "date": "2025-04-24",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1184/9784478121184_1_13.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18158375/",
-   "rank": 19,
-   "mv": -8
-  },
-  {
-   "id": "9784023334632",
-   "isbn": "9784023334632",
-   "t": "今さら聞けない投資の超基本　改訂新版",
-   "a": "泉美智子",
-   "p": "朝日新聞出版",
-   "y": 1540,
-   "c": "inv",
-   "date": "2025-10-07",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4632/9784023334632_1_3.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18371909/",
+   "y": 1958,
+   "c": "eco",
+   "date": "2025-08-07",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1054/9784478121054_1_6.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18234901/",
    "rank": 14,
    "mv": "new"
   },
   {
-   "id": "2100014913711",
-   "isbn": "2100014913711",
-   "t": "【特典】パックンの森のお金塾　こども投資(特製おこづかいシート)",
-   "a": "パトリック・ハーラン/伊藤ハムスター",
-   "p": "主婦の友社",
-   "y": 1650,
-   "c": "inv",
-   "date": "2026-04-06",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3711/2100014913711.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18584054/",
-   "rank": 20,
-   "mv": -18
-  },
-  {
-   "id": "9784478122983",
-   "isbn": "9784478122983",
-   "t": "ママ投資家が育休中に1億貯めた株式投資",
-   "a": "ちょる子",
-   "p": "ダイヤモンド社",
-   "y": 1870,
-   "c": "inv",
-   "date": "2026-05-21",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2983/9784478122983_1_9.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18539667/",
-   "rank": 4,
-   "mv": 1
-  },
-  {
-   "id": "9784043301171",
-   "isbn": "9784043301171",
-   "t": "トップ1％の富裕層が子どもに伝える 世界一のお金の教育",
-   "a": "新井　亨",
-   "p": "KADOKAWA",
-   "y": 2090,
+   "id": "9784766835373",
+   "isbn": "9784766835373",
+   "t": "金融機関行職員の　サイバーセキュリティの基本（銀行業務検定試験　金融サイバーセキュリティ3級　公式テキスト＆問題集）",
+   "a": "株式会社エス・ピー・ネットワーク総合研究部",
+   "p": "経済法令研究会",
+   "y": 2530,
    "c": "eco",
-   "date": "2026-06-29",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1171/9784043301171_1_18.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18618313/",
-   "rank": 11,
+   "date": "2025-11-26",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5373/9784766835373_1_11.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18410095/",
+   "rank": 15,
    "mv": "new"
   },
   {
-   "id": "9784296130573",
-   "isbn": "9784296130573",
-   "t": "株主優待ハンドブック 2026-2027年版",
-   "a": "日本経済新聞出版",
-   "p": "日経BP",
-   "y": 1760,
-   "c": "inv",
-   "date": "2026-07-15",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0573/9784296130573_1_3.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18695128/",
-   "rank": 15,
+   "id": "9784296126323",
+   "isbn": "9784296126323",
+   "t": "日経経済知力テスト公式テキスト＆問題集 2026-27年版",
+   "a": "日本経済新聞社",
+   "p": "日経BP 日本経済新聞出版",
+   "y": 2200,
+   "c": "eco",
+   "date": "2026-03-13",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6323/9784296126323_1_6.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18514750/",
+   "rank": 11,
    "mv": "new"
   },
   {
@@ -195,22 +195,8 @@
    "date": "2026-08-24",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9142/9784065439142_1_3.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18712972/",
-   "rank": 16,
-   "mv": "new"
-  },
-  {
-   "id": "9784478122990",
-   "isbn": "9784478122990",
-   "t": "「株ノート」で60歳から1億円",
-   "a": "小林良次",
-   "p": "ダイヤモンド社",
-   "y": 1870,
-   "c": "inv",
-   "date": "2026-08-27",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2990/9784478122990_1_2.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18661863/",
-   "rank": 7,
-   "mv": 5
+   "rank": 12,
+   "mv": 4
   },
   {
    "id": "9784776214809",
@@ -223,8 +209,8 @@
    "date": "2026-08-31",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4809/9784776214809_1_10.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18750505/",
-   "rank": 2,
-   "mv": 1
+   "rank": 3,
+   "mv": -1
   },
   {
    "id": "2100015137680",
@@ -238,7 +224,7 @@
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7680/2100015137680.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18763303/",
    "rank": 6,
-   "mv": 3
+   "mv": 0
   },
   {
    "id": "9784478124499",
@@ -251,82 +237,22 @@
    "date": "2026-09-10",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4499/9784478124499_1_2.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18699337/",
-   "rank": 8,
-   "mv": 5
-  },
-  {
-   "id": "9784866809557",
-   "isbn": "9784866809557",
-   "t": "証券マンひりひり日記",
-   "a": "日野山 大",
-   "p": "三五館シンシャ",
-   "y": 1540,
-   "c": "inv",
-   "date": "2026-09-18",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9557/9784866809557_1_2.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18747107/",
    "rank": 5,
-   "mv": -1
+   "mv": 3
   },
   {
-   "id": "9784793129643",
-   "isbn": "9784793129643",
-   "t": "事業承継インデックス（令和8・9年版）",
-   "a": "税理士法人山田＆パートナーズ/弁護士法人Y＆P法律事務所",
-   "p": "税務研究会出版局",
+   "id": "9784756924964",
+   "isbn": "9784756924964",
+   "t": "ひとり社長の稼げるAI",
+   "a": "田中　亮大",
+   "p": "明日香出版社",
    "y": 1980,
-   "c": "inv",
-   "date": "2026-10-14",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9643/9784793129643_1_4.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18735733/"
-  },
-  {
-   "id": "9784296126859",
-   "isbn": "9784296126859",
-   "t": "2040年の日本再生　進化系フィジタル経済の衝撃",
-   "a": "政井 貴子/増島 稔/SBI金融経済研究所",
-   "p": "日経BP 日本経済新聞出版",
-   "y": 3080,
-   "c": "eco",
-   "date": "2026-10-14",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6859/9784296126859_1_6.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18735711/"
-  },
-  {
-   "id": "9784866678436",
-   "isbn": "9784866678436",
-   "t": "誰も教えてくれなかった 本当のお金の守り方",
-   "a": "中城裕貴",
-   "p": "あさ出版",
-   "y": 1815,
-   "c": "eco",
-   "date": "2026-10-14",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8436/9784866678436_1_4.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18765137/"
-  },
-  {
-   "id": "9784492315682",
-   "isbn": "9784492315682",
-   "t": "クルーグマン　マクロ経済学　第3版",
-   "a": "ポール・クルーグマン/ロビン・ウェルス/大山 道広/石橋 孝次/塩澤 修平/白井",
-   "p": "東洋経済新報社",
-   "y": 4620,
-   "c": "eco",
-   "date": "2026-10-14",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5682/9784492315682_1_62.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18772653/"
-  },
-  {
-   "id": "9784881777879",
-   "isbn": "9784881777879",
-   "t": "金利でわかる経済 金利が読めれば世界が見える",
-   "a": "谷栄一郎",
-   "p": "財経詳報社",
-   "y": 2420,
-   "c": "eco",
-   "date": "2026-10-14",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7879/9784881777879_1_3.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18802371/"
+   "c": "biz",
+   "date": "2026-10-13",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4964/9784756924964_1_4.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18746783/",
+   "rank": 17,
+   "mv": "new"
   },
   {
    "id": "9784049721140",
@@ -449,20 +375,6 @@
    "url": "https://books.rakuten.co.jp/rb/18762926/"
   },
   {
-   "id": "9784043302130",
-   "isbn": "9784043302130",
-   "t": "月配当73万円！ Googleスプレッドシートで1株から始める高配当投資",
-   "a": "配当ウサギ",
-   "p": "KADOKAWA",
-   "y": 1980,
-   "c": "inv",
-   "date": "2026-10-19",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2130/9784043302130_1_8.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18781928/",
-   "rank": 12,
-   "mv": "new"
-  },
-  {
    "id": "9784798077642",
    "isbn": "9784798077642",
    "t": "図解入門ビジネス 最新 ファイナンス理論に基づく株価決定の基本と仕組みがよ〜くわかる本",
@@ -485,6 +397,18 @@
    "date": "2026-10-19",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0955/9784868450955_1_5.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18767524/"
+  },
+  {
+   "id": "9784043302130",
+   "isbn": "9784043302130",
+   "t": "月配当73万円！ Googleスプレッドシートで1株から始める高配当投資",
+   "a": "配当ウサギ",
+   "p": "KADOKAWA",
+   "y": 1980,
+   "c": "inv",
+   "date": "2026-10-19",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2130/9784043302130_1_8.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18781928/"
   },
   {
    "id": "9784798075341",
@@ -651,7 +575,7 @@
    "y": 3740,
    "c": "eco",
    "date": "2026-10-26",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2914/9784300122914_1_40.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2914/9784300122914_1_42.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18771558/"
   },
   {
@@ -715,6 +639,20 @@
    "url": "https://books.rakuten.co.jp/rb/18843654/"
   },
   {
+   "id": "9784813087472",
+   "isbn": "9784813087472",
+   "t": "米国株大全　2027",
+   "a": "",
+   "p": "大洋図書",
+   "y": 1180,
+   "c": "inv",
+   "date": "2026-10-27",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7472/9784813087472_1_2.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18716877/",
+   "rank": 16,
+   "mv": "new"
+  },
+  {
    "id": "9784801827684",
    "isbn": "9784801827684",
    "t": "こどもNISAかんたんスタートガイド",
@@ -739,18 +677,6 @@
    "url": "https://books.rakuten.co.jp/rb/18713711/"
   },
   {
-   "id": "9784813087472",
-   "isbn": "9784813087472",
-   "t": "米国株大全　2027",
-   "a": "",
-   "p": "大洋図書",
-   "y": 1180,
-   "c": "inv",
-   "date": "2026-10-27",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7472/9784813087472_1_2.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18716877/"
-  },
-  {
    "id": "9784802135931",
    "isbn": "9784802135931",
    "t": "14人の女性起業家が語る「自分を諦めない」と決めた瞬間",
@@ -759,7 +685,7 @@
    "y": 1760,
    "c": "biz",
    "date": "2026-10-27",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5931/9784802135931_1_5.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5931/9784802135931_1_6.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18806326/"
   },
   {
@@ -799,6 +725,20 @@
    "url": "https://books.rakuten.co.jp/rb/18842972/"
   },
   {
+   "id": "9784911636176",
+   "isbn": "9784911636176",
+   "t": "高市政権の本格始動で、日本株の大相場はこれからだ",
+   "a": "武者陵司",
+   "p": "かや書房",
+   "y": 1980,
+   "c": "inv",
+   "date": "2026-10-28",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6176/9784911636176_1_6.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18779565/",
+   "rank": 1,
+   "mv": "new"
+  },
+  {
    "id": "9784752290551",
    "isbn": "9784752290551",
    "t": "AI時代の自立論~経済的にだれにも依存しない人生を~",
@@ -831,20 +771,8 @@
    "y": 2640,
    "c": "eco",
    "date": "2026-10-28",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5729/9784492315729_1_34.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5729/9784492315729_1_36.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18772659/"
-  },
-  {
-   "id": "9784911636176",
-   "isbn": "9784911636176",
-   "t": "高市政権の本格始動で、日本株の大相場はこれからだ",
-   "a": "武者陵司",
-   "p": "かや書房",
-   "y": 1980,
-   "c": "inv",
-   "date": "2026-10-28",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6176/9784911636176_1_6.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18779565/"
   },
   {
    "id": "9784344988224",
@@ -891,7 +819,7 @@
    "y": 2750,
    "c": "eco",
    "date": "2026-10-30",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7208/9784811907208_1_25.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7208/9784811907208_1_27.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18862283/"
   },
   {
@@ -915,7 +843,7 @@
    "y": 3740,
    "c": "eco",
    "date": "2026-11-03",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4996/9784492654996_1_31.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4996/9784492654996_1_33.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18805885/"
   },
   {
@@ -939,7 +867,7 @@
    "y": 1760,
    "c": "inv",
    "date": "2026-11-04",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8858/9784396618858_1_2.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8858/9784396618858_1_4.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18863667/"
   },
   {
@@ -1071,7 +999,7 @@
    "y": 6930,
    "c": "eco",
    "date": "2026-11-10",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2614/9784815812614_1_5.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2614/9784815812614_1_6.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18830953/"
   },
   {
@@ -1131,7 +1059,7 @@
    "y": 3960,
    "c": "inv",
    "date": "2026-11-13",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0332/9784254290332_1_4.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0332/9784254290332_1_5.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18827261/"
   },
   {
@@ -1167,7 +1095,7 @@
    "y": 1870,
    "c": "inv",
    "date": "2026-11-16",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1661/9784426131661_1_6.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1661/9784426131661_1_8.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18867527/"
   },
   {
@@ -1227,7 +1155,7 @@
    "y": 7150,
    "c": "eco",
    "date": "2026-11-18",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1404/9784492371404_1_10.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1404/9784492371404_1_12.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18817120/"
   },
   {
@@ -1239,7 +1167,7 @@
    "y": 7150,
    "c": "eco",
    "date": "2026-11-18",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1398/9784492371398_1_10.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1398/9784492371398_1_12.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18817116/"
   },
   {
@@ -1311,7 +1239,7 @@
    "y": 1760,
    "c": "inv",
    "date": "2026-11-20",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7895/9784798077895_1_2.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7895/9784798077895_1_4.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18772639/"
   },
   {
@@ -1421,18 +1349,6 @@
    "date": "2026-11-26",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7722/9784415337722.gif?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18846234/"
-  },
-  {
-   "id": "9784496058486",
-   "isbn": "9784496058486",
-   "t": "中小企業診断士試験　ニュー・クイックマスター　1　経済学・経済政策（2027年版）",
-   "a": "中小企業診断士試験クイック合格研究チーム",
-   "p": "同友館",
-   "y": 2420,
-   "c": "eco",
-   "date": "2026-11-27",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8486/9784496058486.gif?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18801450/"
   },
   {
    "id": "9784768332443",
@@ -1545,7 +1461,7 @@
   {
    "id": "9784591190562",
    "isbn": "9784591190562",
-   "t": "お金は攻略できる　お金の基本ルール編",
+   "t": "お金は攻略できる1　マネー　お金の基本ルール編",
    "a": "橘　玲",
    "p": "ポプラ社",
    "y": 1760,
@@ -1557,7 +1473,7 @@
   {
    "id": "9784591192160",
    "isbn": "9784591192160",
-   "t": "お金は攻略できる　お金が動くしくみ編",
+   "t": "お金は攻略できる2　ファイナンス　お金が動くしくみ編",
    "a": "橘　玲",
    "p": "ポプラ社",
    "y": 1760,
@@ -1651,6 +1567,30 @@
    "url": "https://books.rakuten.co.jp/rb/18872009/"
   },
   {
+   "id": "9784478124291",
+   "isbn": "9784478124291",
+   "t": "稼ぐ人は、なぜ不動産を持つのか",
+   "a": "古木 大咲",
+   "p": "ダイヤモンド社",
+   "y": 2200,
+   "c": "biz",
+   "date": "2026-12-03",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4291/9784478124291.gif?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18843301/"
+  },
+  {
+   "id": "9784496058486",
+   "isbn": "9784496058486",
+   "t": "中小企業診断士試験　ニュー・クイックマスター　1　経済学・経済政策（2027年版）",
+   "a": "中小企業診断士試験クイック合格研究チーム",
+   "p": "同友館",
+   "y": 2420,
+   "c": "eco",
+   "date": "2026-12-04",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8486/9784496058486.gif?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18801450/"
+  },
+  {
    "id": "9784296126811",
    "isbn": "9784296126811",
    "t": "こどもNISAの教科書",
@@ -1707,7 +1647,7 @@
    "y": 1870,
    "c": "eco",
    "date": "2026-12-08",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3251/9784890223251.gif?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3251/9784890223251_1_2.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18867032/"
   },
   {
@@ -1719,13 +1659,13 @@
    "y": 2420,
    "c": "biz",
    "date": "2026-12-09",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9955/9784798199955_1_39.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9955/9784798199955_1_41.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18850565/"
   },
   {
    "id": "9784299084118",
    "isbn": "9784299084118",
-   "t": "家事・育児の間に1億円！ ママ投資家たちの「億」をつくるマイルール",
+   "t": "家事・育児の間に1億円! ママ投資家たちの「億」をつくるマイルール",
    "a": "ちょる子/ナスダッ子",
    "p": "宝島社",
    "y": 1430,
@@ -1791,7 +1731,7 @@
    "y": 2970,
    "c": "eco",
    "date": "2026-12-10",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6752/9784641166752_1_14.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6752/9784641166752_1_16.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18867921/"
   },
   {
@@ -2049,7 +1989,7 @@
   {
    "id": "9784299084002",
    "isbn": "9784299084002",
-   "t": "世界一かんたん！ 新NISAの「わからない！」をぜんぶ解決する本 2027年最新版",
+   "t": "世界一かんたん! 新NISAの「わからない!」をぜんぶ解決する本 2027年最新版",
    "a": "酒井 富士子",
    "p": "宝島社",
    "y": 1320,
@@ -2151,7 +2091,7 @@
    "y": 2420,
    "c": "eco",
    "date": "2026-12-30",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1567/9784641151567_1_11.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1567/9784641151567_1_13.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18816232/"
   },
   {
@@ -2239,18 +2179,6 @@
    "url": "https://books.rakuten.co.jp/rb/18868481/"
   },
   {
-   "id": "9784815630652",
-   "isbn": "9784815630652",
-   "t": "見るだけでわかる！ 図解 行動経済学が最強の学問である",
-   "a": "相良 奈美香",
-   "p": "SBクリエイティブ",
-   "y": 1760,
-   "c": "eco",
-   "date": "2027-01-27",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0652/9784815630652_1_9.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18250205/"
-  },
-  {
    "id": "9784478123454",
    "isbn": "9784478123454",
    "t": "億り人100人に会ってわかった最速で億に到達する株式投資",
@@ -2297,6 +2225,18 @@
    "date": "2027-02-19",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7054/9784911147054.gif?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18379678/"
+  },
+  {
+   "id": "9784815630652",
+   "isbn": "9784815630652",
+   "t": "見るだけでわかる！ 図解 行動経済学が最強の学問である",
+   "a": "相良 奈美香",
+   "p": "SBクリエイティブ",
+   "y": 1760,
+   "c": "eco",
+   "date": "2027-03-27",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0652/9784815630652_1_10.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18250205/"
   },
   {
    "id": "9784772663120",
