@@ -1,21 +1,7 @@
 {
- "updated": "2026-11-23T10:22:46+09:00",
+ "updated": "2026-11-24T14:07:55+09:00",
  "genre": "ビジネス・経済・就職",
  "books": [
-  {
-   "id": "9784822242978",
-   "isbn": "9784822242978",
-   "t": "デイトレード",
-   "a": "オリバー・ベレス/グレッグ・カプラ/林　康史",
-   "p": "日経BP社",
-   "y": 2860,
-   "c": "inv",
-   "date": null,
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2978/9784822242978.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/1493307/",
-   "rank": 16,
-   "mv": "new"
-  },
   {
    "id": "9784775971802",
    "isbn": "9784775971802",
@@ -27,21 +13,21 @@
    "date": null,
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1802/9784775971802.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/12610575/",
-   "rank": 17,
-   "mv": "new"
+   "rank": 18,
+   "mv": -1
   },
   {
-   "id": "9784799322468",
-   "isbn": "9784799322468",
-   "t": "図解　90分でわかる経済のしくみ",
-   "a": "長瀬 勝彦",
-   "p": "ディスカヴァー・トゥエンティワン",
-   "y": 1540,
+   "id": "9784866511245",
+   "isbn": "9784866511245",
+   "t": "漫画　バビロン大富豪の教え",
+   "a": "ジョージ・S・クレイソン/坂野旭/大橋弘祐",
+   "p": "文響社",
+   "y": 1782,
    "c": "eco",
-   "date": null,
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2468/9784799322468.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/15390620/",
-   "rank": 18,
+   "date": "2019-10-04",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1245/9784866511245.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/16023963/",
+   "rank": 19,
    "mv": "new"
   },
   {
@@ -55,8 +41,8 @@
    "date": "2020-07-21",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5852/9784434275852.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/16317075/",
-   "rank": 19,
-   "mv": "new"
+   "rank": 20,
+   "mv": -1
   },
   {
    "id": "9784801400900",
@@ -69,8 +55,8 @@
    "date": "2021-09-09",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0900/9784801400900_1_8.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/16819215/",
-   "rank": 12,
-   "mv": 4
+   "rank": 14,
+   "mv": -2
   },
   {
    "id": "9784478114131",
@@ -83,35 +69,21 @@
    "date": "2021-12-09",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4131/9784478114131_1_2.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/16915229/",
-   "rank": 7,
-   "mv": "new"
+   "rank": 5,
+   "mv": 2
   },
   {
-   "id": "9784046060228",
-   "isbn": "9784046060228",
-   "t": "ギガ速FX　月の手取り439万円を獲得したゾーントレードの極意【完全無修正】",
-   "a": "リオン",
-   "p": "KADOKAWA",
-   "y": 1980,
-   "c": "inv",
-   "date": "2023-03-31",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0228/9784046060228_1_5.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/17413328/",
-   "rank": 20,
-   "mv": "new"
-  },
-  {
-   "id": "9784815619503",
-   "isbn": "9784815619503",
-   "t": "行動経済学が最強の学問である",
-   "a": "相良 奈美香",
-   "p": "SBクリエイティブ",
-   "y": 1870,
+   "id": "9784801400993",
+   "isbn": "9784801400993",
+   "t": "東大生が日本を100人の島に例えたら　面白いほど経済がわかった！",
+   "a": "ムギタロー/井上 智洋/望月 慎",
+   "p": "サンクチュアリ出版",
+   "y": 1760,
    "c": "eco",
-   "date": "2023-06-05",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9503/9784815619503_1_8.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/17466616/",
-   "rank": 13,
+   "date": "2022-08-16",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0993/9784801400993_1_13.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/17181684/",
+   "rank": 8,
    "mv": "new"
   },
   {
@@ -129,6 +101,20 @@
    "mv": 0
   },
   {
+   "id": "9784478121184",
+   "isbn": "9784478121184",
+   "t": "5年で1億貯める株式投資",
+   "a": "kenmo（湘南投資勉強会）",
+   "p": "ダイヤモンド社",
+   "y": 1870,
+   "c": "inv",
+   "date": "2025-04-24",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1184/9784478121184_1_13.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18158375/",
+   "rank": 12,
+   "mv": "new"
+  },
+  {
    "id": "9784478121504",
    "isbn": "9784478121504",
    "t": "50万円を50億円に増やした 投資家の父から娘への教え",
@@ -139,8 +125,36 @@
    "date": "2025-07-03",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1504/9784478121504_1_5.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18234675/",
-   "rank": 8,
-   "mv": -2
+   "rank": 15,
+   "mv": -7
+  },
+  {
+   "id": "9784478121054",
+   "isbn": "9784478121054",
+   "t": "漫画 お金の大冒険",
+   "a": "両＠リベ大学長",
+   "p": "ダイヤモンド社",
+   "y": 1958,
+   "c": "eco",
+   "date": "2025-08-07",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1054/9784478121054_1_6.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18234901/",
+   "rank": 9,
+   "mv": "new"
+  },
+  {
+   "id": "9784766835373",
+   "isbn": "9784766835373",
+   "t": "金融機関行職員の　サイバーセキュリティの基本（銀行業務検定試験　金融サイバーセキュリティ3級　公式テキスト＆問題集）",
+   "a": "株式会社エス・ピー・ネットワーク総合研究部",
+   "p": "経済法令研究会",
+   "y": 2530,
+   "c": "eco",
+   "date": "2025-11-26",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5373/9784766835373_1_13.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18410095/",
+   "rank": 3,
+   "mv": "new"
   },
   {
    "id": "9784479798446",
@@ -153,22 +167,22 @@
    "date": "2026-02-18",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8446/9784479798446_1_2.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18514130/",
-   "rank": 14,
-   "mv": 4
+   "rank": 16,
+   "mv": -2
   },
   {
-   "id": "9784299078919",
-   "isbn": "9784299078919",
-   "t": "100万円を1億に増やすAI活用投資術",
-   "a": "はっしゃん",
-   "p": "宝島社",
+   "id": "9784478122983",
+   "isbn": "9784478122983",
+   "t": "ママ投資家が育休中に1億貯めた株式投資",
+   "a": "ちょる子",
+   "p": "ダイヤモンド社",
    "y": 1870,
    "c": "inv",
-   "date": "2026-07-01",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8919/9784299078919_1_3.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18608105/",
-   "rank": 9,
-   "mv": -1
+   "date": "2026-05-21",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2983/9784478122983_1_9.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18539667/",
+   "rank": 6,
+   "mv": "new"
   },
   {
    "id": "9784776214809",
@@ -195,8 +209,22 @@
    "date": "2026-09-10",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4499/9784478124499_1_2.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18699337/",
-   "rank": 5,
-   "mv": 0
+   "rank": 7,
+   "mv": -2
+  },
+  {
+   "id": "9784043302260",
+   "isbn": "9784043302260",
+   "t": "AIに9割まかせる ほぼほったらかし株式投資 株価が3.53倍、利益253万円に爆増！",
+   "a": "投資家Go",
+   "p": "KADOKAWA",
+   "y": 1980,
+   "c": "inv",
+   "date": "2026-09-11",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2260/9784043302260_1_25.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18716880/",
+   "rank": 4,
+   "mv": "new"
   },
   {
    "id": "9784866678436",
@@ -209,46 +237,22 @@
    "date": "2026-10-14",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8436/9784866678436_1_5.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18765137/",
-   "rank": 3,
-   "mv": "new"
-  },
-  {
-   "id": "9784121508843",
-   "isbn": "9784121508843",
-   "t": "新・日本経済論",
-   "a": "飯田泰之",
-   "p": "中央公論新社",
-   "y": 1100,
-   "c": "eco",
-   "date": "2026-11-06",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8843/9784121508843_1_2.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18815982/",
    "rank": 10,
-   "mv": 4
+   "mv": -7
   },
   {
-   "id": "9784911160206",
-   "isbn": "9784911160206",
-   "t": "魔法使いの弟子たちへ　資本主義の呪縛を解く もう一つの会社の物語",
-   "a": "岩崎春夫",
-   "p": "ブックダム",
-   "y": 2640,
+   "id": "9784065456750",
+   "isbn": "9784065456750",
+   "t": "異次元緩和　経済敗戦と背徳者たち",
+   "a": "原 真人",
+   "p": "講談社",
+   "y": 3520,
    "c": "eco",
-   "date": "2026-11-09",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0206/9784911160206_1_4.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18747656/"
-  },
-  {
-   "id": "9784911311172",
-   "isbn": "9784911311172",
-   "t": "50代だからできる『攻め』と『守り』の資産形成",
-   "a": "谷　征彦",
-   "p": "プラチナ出版",
-   "y": 1760,
-   "c": "inv",
-   "date": "2026-11-09",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1172/9784911311172_1_3.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18835300/"
+   "date": "2026-10-29",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6750/9784065456750_1_3.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18806311/",
+   "rank": 17,
+   "mv": "new"
   },
   {
    "id": "9784589045041",
@@ -331,7 +335,7 @@
    "y": 2970,
    "c": "eco",
    "date": "2026-11-12",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2694/9784641222694_1_113.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2694/9784641222694_1_116.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18720005/"
   },
   {
@@ -523,20 +527,8 @@
    "y": 7150,
    "c": "eco",
    "date": "2026-11-18",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1404/9784492371404_1_44.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1404/9784492371404_1_45.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18817120/"
-  },
-  {
-   "id": "9784492371398",
-   "isbn": "9784492371398",
-   "t": "経済秩序の興亡史　1933-2023　上",
-   "a": "マーティン・ドーントン/廣渡 潔",
-   "p": "東洋経済新報社",
-   "y": 7150,
-   "c": "eco",
-   "date": "2026-11-18",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1398/9784492371398_1_44.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18817116/"
   },
   {
    "id": "9784043301676",
@@ -551,20 +543,6 @@
    "url": "https://books.rakuten.co.jp/rb/18822624/"
   },
   {
-   "id": "9784478126073",
-   "isbn": "9784478126073",
-   "t": "【楽天ブックス限定デジタル特典】一番売れてる月刊マネー誌ザイが作った 新NISAで買うべき株＆投信77 2027年度版(NISAで買う投信の選び方（「ダイヤモンドZAi」2026年10月号の一部を抜粋・編集）ダウンロード)",
-   "a": "ダイヤモンド・ザイ編集部",
-   "p": "ダイヤモンド社",
-   "y": 1980,
-   "c": "inv",
-   "date": "2026-11-19",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6073/9784478126073_1_2.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18816553/",
-   "rank": 11,
-   "mv": "new"
-  },
-  {
    "id": "9784054071360",
    "isbn": "9784054071360",
    "t": "13歳からのオルカン",
@@ -575,6 +553,18 @@
    "date": "2026-11-19",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1360/9784054071360_1_3.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18793520/"
+  },
+  {
+   "id": "9784478126073",
+   "isbn": "9784478126073",
+   "t": "【楽天ブックス限定デジタル特典】一番売れてる月刊マネー誌ザイが作った 新NISAで買うべき株＆投信77 2027年度版(NISAで買う投信の選び方（「ダイヤモンドZAi」2026年10月号の一部を抜粋・編集）ダウンロード)",
+   "a": "ダイヤモンド・ザイ編集部",
+   "p": "ダイヤモンド社",
+   "y": 1980,
+   "c": "inv",
+   "date": "2026-11-19",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6073/9784478126073_1_2.jpg?_ex=200x200",
+   "url": "https://books.rakuten.co.jp/rb/18816553/"
   },
   {
    "id": "9784478122693",
@@ -611,8 +601,8 @@
    "date": "2026-11-20",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7981/9784801207981_1_11.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18842771/",
-   "rank": 6,
-   "mv": 5
+   "rank": 13,
+   "mv": -7
   },
   {
    "id": "9784828428741",
@@ -671,7 +661,7 @@
    "y": 2970,
    "c": "eco",
    "date": "2026-11-24",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3645/9784300123645_1_48.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3645/9784300123645_1_49.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18804322/"
   },
   {
@@ -683,7 +673,7 @@
    "y": 1980,
    "c": "eco",
    "date": "2026-11-24",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3713/9784300123713_1_48.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3713/9784300123713_1_49.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18804526/"
   },
   {
@@ -791,7 +781,7 @@
    "y": 3630,
    "c": "inv",
    "date": "2026-11-26",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4253/9784300124253_1_48.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4253/9784300124253_1_49.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18804372/"
   },
   {
@@ -803,7 +793,7 @@
    "y": 3630,
    "c": "inv",
    "date": "2026-11-26",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4239/9784300124239_1_48.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4239/9784300124239_1_49.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18804370/"
   },
   {
@@ -815,7 +805,7 @@
    "y": 3630,
    "c": "inv",
    "date": "2026-11-26",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4246/9784300124246_1_48.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4246/9784300124246_1_49.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18804371/"
   },
   {
@@ -972,9 +962,7 @@
    "c": "eco",
    "date": "2026-12-01",
    "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8923/9784788928923_1_7.jpg?_ex=200x200",
-   "url": "https://books.rakuten.co.jp/rb/18800814/",
-   "rank": 15,
-   "mv": "new"
+   "url": "https://books.rakuten.co.jp/rb/18800814/"
   },
   {
    "id": "9784433704469",
@@ -1033,7 +1021,7 @@
    "y": 5500,
    "c": "eco",
    "date": "2026-12-02",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0369/9784641490369_1_19.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0369/9784641490369_1_22.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18816208/"
   },
   {
@@ -1129,7 +1117,7 @@
    "y": 2420,
    "c": "inv",
    "date": "2026-12-03",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6223/9784910786223_1_22.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6223/9784910786223_1_25.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18872009/"
   },
   {
@@ -1225,7 +1213,7 @@
    "y": 1870,
    "c": "eco",
    "date": "2026-12-04",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1704/9784909151704_1_18.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1704/9784909151704_1_21.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18903360/"
   },
   {
@@ -1285,7 +1273,7 @@
    "y": 2420,
    "c": "biz",
    "date": "2026-12-09",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9955/9784798199955_1_91.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9955/9784798199955_1_94.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18850565/"
   },
   {
@@ -1441,7 +1429,7 @@
    "y": 2970,
    "c": "eco",
    "date": "2026-12-14",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6752/9784641166752_1_64.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6752/9784641166752_1_67.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18867921/"
   },
   {
@@ -1477,7 +1465,7 @@
    "y": 1760,
    "c": "inv",
    "date": "2026-12-16",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3837/9784492733837_1_20.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3837/9784492733837_1_21.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18847889/"
   },
   {
@@ -1837,7 +1825,7 @@
    "y": 2420,
    "c": "eco",
    "date": "2026-12-24",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1567/9784641151567_1_61.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1567/9784641151567_1_64.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18816232/"
   },
   {
@@ -1885,7 +1873,7 @@
    "y": 5280,
    "c": "eco",
    "date": "2026-12-25",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6745/9784641166745_1_19.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6745/9784641166745_1_22.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18868062/"
   },
   {
@@ -2029,10 +2017,10 @@
    "y": 1980,
    "c": "eco",
    "date": "2027-01-20",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1508/9784049721508_1_3.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1508/9784049721508_1_5.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18913101/",
-   "rank": 4,
-   "mv": "new"
+   "rank": 11,
+   "mv": -7
   },
   {
    "id": "9784535541399",
@@ -2055,7 +2043,7 @@
    "y": 2200,
    "c": "eco",
    "date": "2027-01-20",
-   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1428/9784492371428_1_4.jpg?_ex=200x200",
+   "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1428/9784492371428_1_5.jpg?_ex=200x200",
    "url": "https://books.rakuten.co.jp/rb/18902133/"
   },
   {
